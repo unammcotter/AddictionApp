@@ -1,16 +1,13 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View} from 'react-native';
+import CustomeButton from './components/CustomButton';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        //onPress={() => go to relax page
-        style={{ backgroundColor: 'blue' }}>
-        <Text style={{ fontSize: 20, color: '#fff' }}>Relax</Text>
-      </TouchableOpacity>
-      <StatusBar style="auto" />
+        <CustomeButton title="Relax" />        
+        <StatusBar style="auto" />
     </View>
   );
 }
@@ -21,7 +18,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop:100,
   },
   timer: {
     color: '#0D0D0D',
