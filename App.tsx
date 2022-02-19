@@ -6,7 +6,8 @@ import CustomeButton from './components/CustomButton';
 export default function App() {
   return (
     <View style={styles.container}>
-        <CustomeButton title="Relax" />        
+        <CustomeButton title="Relax" />
+        <CustomeButton title="Urge" />        
         <StatusBar style="auto" />
     </View>
   );
